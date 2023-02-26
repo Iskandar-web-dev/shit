@@ -1,0 +1,123 @@
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.empts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fill {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    background: white;
+}
+
+.empty {
+    display: inline-block;
+    height: 100%;
+    min-height: 160px;
+    width: 100%;
+    margin: 10px;
+    border: 3px #F4F5F7 solid;
+    background-color: #F4F5F7;
+}
+
+.hold {
+    cursor: pointer;
+    border: solid #ccc 4px;
+}
+
+.hovered {
+    background: gray;
+    border-style: dashed;
+}
+
+.invisible {
+    display: none;
+}
+
+
+   button{
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+    border: none;
+  }
+  button:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-5px);
+  }
+  
+  dialog {
+    width: 100%;
+    max-width: 700px;
+    border: none;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.4);
+    animation: fadeIn 250ms ease-in-out;
+  }
+  
+  dialog::backdrop {
+    background-color: rgba(0,0,0,.7);
+    backdrop-filter: blur(5px);
+  }
+  
+  dialog .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  @keyframes fadeIn{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+.close {
+    width: 50px;
+}
+.close:hover {
+    transform: translateY(-0px);
+}
+
+dialog input {
+    width: 250px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    border: none;
+    border: 1px solid rgba(46, 229, 157, .4);
+    outline: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+}
+.add2:hover {
+    transform: translateY(-0px);
+}

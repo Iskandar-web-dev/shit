@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>drag'n drop</title>
+</head>
+<body>
+    <dialog data-modal="modal1">
+        <button class="close">&times;</button>
+        <h2>Введите какую задачу вы хотите добавить?</h2>
+        <form name="add_form">
+            <input type="text" class="inpp" name="title">
+            <button class="add2">Закрепить</button>
+        </form>
+      </dialog>
+    <button class="add" data-modal-open="modal1">Добавить</button>
+    <div class="empts">
+        <div class="empty emp1">
+            <span>todo</span>
+        </div>
+        <div class="empty">
+            <span>inprogress</span>
+        </div>
+    <div class="empty">
+        <span>done</span>
+    </div>
+    </div>    
+    <script src="index.js"></script>
+</body>
+</html>
